@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+<title>{% block title %}{% endblock %}</title>
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}" />
+<link rel="stylesheet" type="text/css" href="{% block extrastyle %}{% endblock %}" />
+
+</head>
+
+<body>
+
+  <div id="header">
+    <h2 class="maintitle"><a href="{% url 'home' %}">Test</a></h2>
+
+    <h4 class="welcome">Welcome, Guest!</h4>
+
+  </div>
+
+
+  <div id="menu">
+    <h3><a href="{% url 'home' %}">Home</a></h3>
+  </div>
+
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+  <div id="footer">
+    Test! 2018
+  </div>
+{% endblock %}
+
+</body>
+
+</html>

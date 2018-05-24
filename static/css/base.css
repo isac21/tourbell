@@ -1,0 +1,174 @@
+
+
+body {
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+
+/* HEADER */
+
+div#header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  display: table;
+  background: skyblue;
+}
+
+.maintitle {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  color: #ffc;
+  font-weight: bold;
+  font-size: 38px;
+  font-style: italic;
+}
+
+.welcome {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: right;
+  padding-right: 20px;
+  color: #ffc;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.welcome a:link, .welcome a:visited {
+  color: white;
+}
+
+
+/* MENU */
+
+div#menu {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  height: auto;
+  width: 130px;
+  margin: 0px;
+  display: table;
+  /*background: #ffa;*/
+}
+
+div#menu h3 {
+  margin: 0;
+  padding: 0;
+}
+
+div#menu h3 a {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  background: #ffa;
+  background: -moz-linear-gradient(#ffa 0%, #fcd 70%);
+  background: -webkit-linear-gradient(#ffa 0%, #fcd 70%);
+  background: -o-linear-gradient(#ffa 0%, #fca 70%);
+  background: linear-gradient(#ffa 0%, #fca 70%);
+}
+
+div#menu :target h3 a,
+div#menu h3 a:focus,
+div#menu h3 a:hover,
+div#menu h3 a:active {
+  background: -moz-linear-gradient(#fff 0%, #fcd 70%);
+  background: -webkit-linear-gradient(#fff 0%, #fcd 70%);
+  background: -o-linear-gradient(#fff 0%, #fcb 70%);
+  background: linear-gradient(#fff 0%, #fcb 70%);
+}
+
+
+/* pulldown menu */
+
+div#menu p{
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  -moz-transition:height 0.5s ease_in;
+  -o-trasition:all 0.5s ease-in;
+  -webkit-trasition:height 0.5s ease-in;
+  transition: height 0.2s ease-in;
+}
+
+div#menu :target p{
+  height: 30px;
+  border-bottom: 1px solid #fff;
+  background: #fca;
+}
+
+div#menu :target p a{
+  display: block;
+  text-align: right;
+  vertical-align: middle;
+  padding: 1px 20px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Content */
+
+div#content {
+  position: absolute;
+  top: 70px;
+  left: 185px;
+  right: 25px;
+}
+
+div#content h1 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+div#content ul li {
+  font-size: 17px;
+}
+
+/* Footer */
+
+div#footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  right: 50px;
+  height: 30px;
+  border-top: 1px solid #ccc;
+}
+
+
+/* effect */
+
+a:link, a:visited {
+  color: #369;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* TABLE */
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  line-height: 18px;
+  border-bottom: 1px solid #eee;
+  vertical-align:top;
+  padding: 5px 15px;
+  font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+}
